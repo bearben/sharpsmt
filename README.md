@@ -24,7 +24,8 @@ The tool LattE and Barvinok are not included.
 | Name           | Description   |
 |  ------------- | ------------- |
 | bin/ | Polytope Subroutines |
-| src/ | Sorce codes |
+| src/ | Sorce codes of sharpSMT |
+| test/ | Formulas for Testing |
 | ApproxLatCount.zip | Source codes of ALC |
 | benchmarks.zip | The complete set of benchmarks |
 | build.sh | Shell for building sharpSMT |
