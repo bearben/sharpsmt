@@ -23,7 +23,7 @@ The tool LattE and Barvinok are not included.
 ## Directories
 | Name           | Description   |
 |  ------------- | ------------- |
-| bin/ | polytope subroutine tools |
+| bin/ | Polytope Subroutines |
 | src/ | Sorce codes |
 | ApproxLatCount.zip | Source codes of ALC |
 | benchmarks.zip | The complete set of benchmarks |
