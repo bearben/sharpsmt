@@ -16,6 +16,9 @@ In detail, it calls various polytope subroutines as the following.
 | ApproxLatCount | Approximate Integer Solution Counting | -a |
 | Vol2Lat | Approximate Integer Solution Counting | -v |
 
+This release includes the source codes of PolyVest, Vinci, ApproxLatCount (ALC) and Vol2Lat (V2L).
+The tool LattE and Barvinok are not included.
+
 
 ## Directories
 | Name           | Description   |
@@ -34,7 +37,7 @@ In detail, it calls various polytope subroutines as the following.
 This release of sharpSMT has been successfully built on the following operating systems:
 * Ubuntu 22.04 on 64-bit with g++ 11.4.0
 
-## Building VolCE
+## Building sharpSMT
 * Step 1: Make sure that g++ is installed on your machine (you can type "g++ -v" to check this).
 * Step 2: The functionality of sharpSMT is dependent on some other libraries: [boost](http://www.boost.org/), [glpk](http://www.gnu.org/software/glpk/), and [Armadillo](http://arma.sourceforge.net/).
 * Step 3: Execute:
