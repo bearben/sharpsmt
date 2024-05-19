@@ -8,6 +8,7 @@ then it calls tools on polytopes and finaly sums the volume or counts up.
 In detail, it calls various polytope subroutines as the following.
 
 | Polytope Subroutine | Functions | Command-line Option |
+|  ------------- | ------------- | ------------- |
 | PolyVest | Volume Approximation | -p |
 | Vinci | Volume Computation | -v |
 | LattE | Exact Integer Solution Counting | -l |
