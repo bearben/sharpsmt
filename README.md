@@ -1,20 +1,33 @@
 # sharpSMT
 
 ## What is it?
-VolCE is a tool designed for measuring the solution space of an SMT(LA) formula. It is licensed under the [GNU General Public License](COPYING).
+sharpSMT is a tool designed for measuring the solution space of an SMT(LA) formula,
+It is licensed under the [GNU General Public License](COPYING).
+Intuitively, sharpSMT subdivides the solution spaces of SMT(LA) formulas into a series of polytopes,
+then it calls tools on polytopes and finaly sums the volume or counts up.
+In detail, it calls various polytope subroutines as the following.
+
+| Polytope Subroutine | Functions | Command-line Option |
+| PolyVest | Volume Approximation | -p |
+| Vinci | Volume Computation | -v |
+| LattE | Exact Integer Solution Counting | -l |
+| Barvinok | Exact Integer Solution Counting | -b |
+| ApproxLatCount | Approximate Integer Solution Counting | -a |
+| Vol2Lat | Approximate Integer Solution Counting | -v |
+
 
 ## Directories
 | Name           | Description   |
 |  ------------- | ------------- |
-| [bin/](bin/) | polytope subroutine tools |
-| [src/](src/) | Sorce codes |
-| [ApproxLatCount.zip] (ApproxLatCount.zip) | Source codes of ALC |
-| [benchmarks.zip](examples.zip) | The complete set of benchmarks |
-| [build.sh](build.sh) | Shell for building sharpSMT |
-| [COPYING](COPYING) | GNU GPL lincese |
-| [makefile](makefile) | makefile |
-| [vinci-1.0.5.zip](vinci-1.0.5.zip) | Source codes for a modified version of Vinci |
-| [z3-master.zip](z3-master.zip) | Source codes of Z3 |
+| bin/ | polytope subroutine tools |
+| src/ | Sorce codes |
+| ApproxLatCount.zip | Source codes of ALC |
+| benchmarks.zip | The complete set of benchmarks |
+| build.sh | Shell for building sharpSMT |
+| COPYING | GNU GPL lincese |
+| makefile | makefile |
+| vinci-1.0.5.zip | Source codes for a modified version of Vinci |
+| z3-master.zip | Source codes of Z3 |
 
 ## Build status
 This release of sharpSMT has been successfully built on the following operating systems:
