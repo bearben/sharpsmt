@@ -331,8 +331,8 @@ const double volce::solver::bound_computation() {
 		} else if (rowop[i] == -1){
 			// LT
 			glp_set_row_bnds(lp, i + 1, GLP_UP, 0, colb(i) - 0.000001);
-			std::cout << "UP ";
-			std::cout << colb(i) - 0.000001 << std::endl;
+			//std::cout << "UP ";
+			//std::cout << colb(i) - 0.000001 << std::endl;
 		} else if (rowop[i] == -10) {
 			// LE
 			glp_set_row_bnds(lp, i + 1, GLP_UP, 0, colb(i));
@@ -566,17 +566,16 @@ const double volce::solver::interval_vol(){
 		max = pow(2, wordlength - 1) - 1;
 		min = -pow(2, wordlength - 1);
 	}
+	
 	for (unsigned int i = 0; i < matA.n_rows; i++){
 		if (matA(i, 0) == 0) continue;
 		
 		double v = colb[i] / matA(i, 0);		
-		int cmp = rowop[i];
-		
-		if (matA(i, 0) < 0) cmp = -cmp;
+		int cmp = matA(i, 0) < 0 ? -rowop[i] : rowop[i];
 
-		if (rowop[i] < 0){
+		if (cmp > 0){
 			if (v > min) min = v;
-		}else if (rowop[i] > 0){
+		}else if (cmp < 0){
 			if (v < max) max = v;
 		}else
 		{
