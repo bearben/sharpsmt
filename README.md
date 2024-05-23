@@ -66,10 +66,7 @@ sharpSMT should pop up the help menu by "-h" command.
 Execute:
 
 ```bash
-sudo apt-get install g++
-sudo apt-get install libglpk-dev
-sudo apt-get install libboost-dev
-sudo apt-get install libarmadillo-dev
+sudo apt install g++ libglpk-dev libboost-dev libarmadillo-dev
 sh build.sh
 ```
 
