@@ -37,7 +37,7 @@ if [ ! -d ${ADDR}/vinci-1.0.5/ ]; then
 	mv ${ADDR}/vinci-1.0.5/vinci ${ADDR}/bin/vinci
 fi
 
-#volce main program
+#main program
 echo "Compiling sharpSMT ..."
 cd ${ADDR}
 make depend
