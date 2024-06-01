@@ -74,7 +74,7 @@ sh build.sh
 ### Questions/Feedback/Comments ###
 Please contact:
 
-  1. Cunjing Ge ([gecj@ios.ac.cn](mailto:gecunjing@nju.edu.cn))
+  1. Cunjing Ge ([gecunjing@nju.edu.cn](mailto:gecunjing@nju.edu.cn))
 
 
 Enjoy!
